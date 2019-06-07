@@ -1,0 +1,699 @@
+/* CSS Document */
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.screen{
+	width: 100vw;
+	height: 100vh;
+}
+/*BANNER INFORMATION*/
+
+.bannerIntro{
+	width: 100vw;
+	height: 450px;
+	background-image: url(images/ballpython.jpg);
+	background-position: 0px 50px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#brand{
+	text-align: center;
+	margin: 5px;
+	font-size: 5em;
+	font-family: 'Pinyon Script', cursive;
+	letter-spacing: 15px;
+	color:#fff;
+}
+.bannerNew{
+	width: 100vw;
+	height: 450px;
+	background-image: url(images/white-snake.jpg);
+	background-position: 0px 0px;
+	background-size: cover;
+	background-attachment: fixed;
+}
+#sectionNew{
+	font-size: 5rem;
+	font-family: 'Petit Formal Script', cursive;
+	margin-top:40px;
+	color: #1C2767;
+	position: absolute;
+	margin-left: 42%;
+	z-index: 2;
+	text-align: center;
+}
+.bannerRunway{
+	width: 100vw;
+	height: 450px;
+	background-image: url(images/runway-RedBoa.jpg);
+	background-position: 0px -300px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+#sectionRunway{
+	font-size: 5rem;
+	font-family: 'Pinyon Script', cursive;
+	margin-top:40px;
+	color: #ff0000;
+	position: absolute;
+	margin-left: 42%;
+	z-index: 2;
+	justify-content: center;
+}
+.bannerWomen{
+	width: 100vw;
+	height: 450px;
+	background-image: url(images/women-scatteredpython.jpg);
+	background-position: 0px -1150px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+#sectionWomen{
+	font-size: 5rem;
+	font-family: 'Pinyon Script', cursive;
+	margin-top:40px;
+	color: #7800ad;
+	position: absolute;
+	margin-left: 42%;
+	z-index: 2;
+	text-align: center;
+}
+.bannerMen{
+	width: 100vw;
+	height: 450px;
+	background-image: url(images/black-whiteCobra.jpg);
+	background-position: 0px -600px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+#sectionMen{
+	font-size: 5rem;
+	font-family: 'Pinyon Script', cursive;
+	margin-top:40px;
+	color: #cabe02;
+	position: absolute;
+	margin-left: 42%;
+	z-index: 2;
+	justify-content: center;
+}
+.bannerStories{
+	width: 100vw;
+	height: 450px;
+	background-image: url(images/stories.png);
+	background-position: 0px -900px;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat:no-repeat;
+}
+#sectionStories{
+	font-size: 5rem;
+	font-family: 'Pinyon Script', cursive;
+	margin-top:40px;
+	color: #df8711;
+	position: absolute;
+	margin-left: 42%;
+	z-index: 2;
+	justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+	.bannerWomen{
+		background-position: 0px -600px;
+	}
+	.bannerMen{
+		background-position: 0px -350px;
+	}
+	.bannerStories{
+		background-position: 0px -750px;
+	}
+}
+
+/* -----------------NEW COMING SOON -----------------	 */
+.cover {
+    height: 100%;
+		width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 25px;
+		background-image: url(images/pinkCornSnake.jpg);
+}
+
+.home a{
+    position: absolute;
+    top: 0;
+    left: 16px;
+		text-decoration: none;
+		color:#fff;
+		background-color: #000;
+		padding: 10px;
+}
+
+.middle {
+		height: auto;
+		width: auto;
+		background-color: #000;
+		opacity: 0.15;
+		color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+		transition: 0.5s;
+		padding:10px;
+}
+.middle:hover{
+	opacity:1;
+}
+
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+/*------------------ NIGHT VERSION ------------------*/
+.topContainer{
+	width: 100vw;
+	height: 150px;
+	background-image: linear-gradient(
+		to top, rgba(255,0,0,0), rgba(0,0,0,1));
+	position: fixed;
+	z-index: 1;
+	transition: 0.5s;
+
+}
+.topContainer:hover{
+	background-color: #000;
+}
+
+#mark, #markRed, #markWhite, #markPurple, #markYellow, #markOrange{
+	text-align: center;
+	font-family: 'Open Sans', sans-serif;
+	margin-top:10px;
+	display: flex;
+	justify-content: center;
+}
+#mark a, #markRed a, #markPurple a, #markYellow a, #markOrange a{
+	text-decoration: none;
+	color: #fff;
+	margin: 0px 25px;
+	transition: .5s;
+
+}
+#mark a:hover{
+	background-color:#343434;
+	color: #00FD9E;
+	padding: 5px;
+}
+@media screen and (max-width: 700px) {
+	.topContainer{
+		background-color: #000 !important;
+		height: 275px;
+	}
+    #mark {
+        flex-direction: column;
+    }
+}
+
+.divider{
+	position: absolute;
+	width: 100vw;
+	top: 375px;
+	height: 75px;
+	background-image: linear-gradient(
+		to top, rgba(0,0,0,1), rgba(0,0,0,0));
+}
+.Pcontainer{
+	position:relative;
+	z-index: -1;
+	width: 100vw;
+	padding: 10px 0px;
+	height: auto;
+	background-color: #000;
+}
+
+/*------------------ DAY VERSION ------------------*/
+.topContainerWhite{
+	width: 100vw;
+	height: 150px;
+	background-image: linear-gradient(
+		to top, rgba(255,255,255,0), rgba(255,255,255,1));
+	position: fixed;
+	z-index: 1;
+	transition: 0.5s;
+}
+.topContainerWhite:hover{
+	background-color: #fff;
+}
+
+#markWhite a{
+	text-decoration: none;
+	color: #012182;
+	margin: 0px 25px;
+	transition: .5s;
+}
+#markWhite a:hover{
+	background-color:#BDBDBD;
+	color: #5C83FF;
+	padding: 5px;
+}
+
+@media screen and (max-width: 700px) {
+	.topContainerWhite{
+		background-color: #fff !important;
+		height: 225px;
+
+	}
+    #markWhite,#markRed,#markPurple, #markYellow, #markOrange {
+			float: left;
+      flex-direction: column;
+    }
+}
+
+.dividerWhite{
+	position: absolute;
+	width: 100vw;
+	top: 375px;
+	height: 75px;
+	background-image: linear-gradient(
+		to top, rgba(255,255,255,1), rgba(0,0,0,0));
+}
+.PcontainerWhite{
+	position:relative;
+	z-index: -1;
+	width: 100vw;
+	padding: 10px 0px;
+	height: auto;
+	background-color: #fff;
+}
+#con1new{
+	height: 650px;
+    width: 100vw;;
+    margin-top: 4px;
+	background-color: #fff;
+}
+.footerWhite{
+	width:100vw;
+	height: 300px;
+	background-color:#fff;
+	z-index: -5;
+}
+/* VARIOUS MARKED VERSION */
+#markRed a:hover{
+	background-color:#343434;
+	color: #ff0000;
+	padding: 5px;
+}
+
+#markPurple a:hover{
+	background-color:#343434;
+	color: #9c00f5;
+	padding: 5px;
+}
+
+#markYellow a:hover{
+	background-color:#343434;
+	color: #d6d100;
+	padding: 5px;
+}
+
+#markOrange a:hover{
+	background-color:#343434;
+	color: #df8711;
+	padding: 5px;
+}
+/*CONTENT ------- HOME PAGE*/
+
+.Pcontainer{
+	display: flex;
+	flex-direction: column;
+}
+
+#f1{
+	height: auto;
+    width: 100vw;;
+    margin-top: 4px;
+	background-color: #000;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+#feature1{
+	flex:60%;
+	height: 550px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url("images/black-greenSnake.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+#desc1{
+	width:40%;
+	height: 550px;
+	background-color: #000;
+	float: right;
+}
+
+
+#textblock1{
+	background-color: #2e2e2e;
+	width: 450px;
+	height: 300px;
+	float: right;
+	margin-top: 100px;
+}
+
+#text1,#text2{
+	width: 20em;
+	color:#a1a1a1;
+	font-family: 'Open Sans', sans-serif;
+	margin-top:10%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#feature2{
+	flex:60%;
+	height: 550px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url("images/black-redSnake.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#desc2{
+	width:40%;
+	height: 550px;
+	background-color: #000;
+	float: right;
+}
+#textblock2{
+	background-color: #2e2e2e;
+	width: 450px;
+	height: 300px;
+	float: left;
+	margin-top: 100px;
+}
+#feature3{
+	flex:60%;
+	height: 550px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image: url("images/black-blueSnake.jpg");
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 1000px) {
+	#textblock1,#textblock2{
+		width: 350px;
+	}
+}
+
+/*CONTENT ------- NEW PAGE*/
+
+
+.bannerImg{
+	margin-top:200px;
+	width: 100vw;
+	height:300px;
+	transition: 0.5s;
+	background-color: #fff;
+}
+.bannerImg2{
+	margin-top:50px;
+	width: 100vw;
+	height:300px;
+	transition: 0.5s;
+	background-color: #fff;
+	border: 2px solid #000;
+	border-radius: 5px;
+}
+.icon{
+	width:25%;
+	height: 250px;
+	float:left;
+	margin:20px;
+	transition: 0.5s;
+}
+.imgStay{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+}
+
+.desc{
+	margin-top: 20px;
+	width:70%;
+	height: 250px;
+	background-color: #000;
+	float: right;
+}
+.content{
+	width: 90%;
+	color:#a1a1a1;
+	font-family: 'Open Sans', sans-serif;
+	margin-top:3%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+@media screen and (max-width: 1000px){
+	.desc{
+		margin-top: 20px;
+		width:70%;
+		height: 250px;
+		background-color: #000;
+		float: right;
+	}
+	.content{
+		width: 35em;
+		color:#a1a1a1;
+		font-family: 'Open Sans', sans-serif;
+		margin-top:10%;
+		margin-left: auto;
+		margin-right: auto;
+
+	}
+}
+/* RUNWAY PAGE CONTENT - FLEX WRAP */
+.runway-container {
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+  background-color: #000;
+}
+
+.imgbox{
+	width:400px;
+	height:600px;
+	float:left;
+	margin:20px;
+	transition: 0.5s;
+	filter: grayscale(0%);
+}
+.img:hover{
+	opacity: 0.5;
+}
+.img{
+	width:100%;
+	height:100%;
+}
+
+.textBox {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+	opacity: 0;
+  transform: translate(-50%, -50%);
+	transition: 0.5s ease;
+}
+.imgbox:hover .textBox {
+  opacity: 1;
+}
+.text {
+  background-color: #ff5260;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* WOMEN PAGE CONTENT - FLEX WRAP */
+.women-container{
+  display: flex;
+  flex-wrap: wrap;
+	justify-content: center;
+  background-color: #000;
+}
+
+.women-imgbox,.men-imgbox{
+	width:400px;
+	height:500px;
+	float:left;
+	margin:50px;
+	transition: 0.5s;
+	filter: grayscale(0%);
+}
+.women-img:hover,.men-img:hover{
+	opacity: 0.5;
+}
+
+.women-textBox,.men-textBox {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+	opacity: 0;
+  transform: translate(-50%, -50%);
+	transition: 0.5s ease;
+}
+.women-imgbox:hover .women-textBox ,.men-imgbox:hover .men-textBox {
+  opacity: 1;
+}
+.textw {
+  background-color: #352a46;
+  color: #fff;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+.men-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	background-color: #000;
+}
+
+.textm {
+  background-color: #f2e418;
+  color: #333333;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.footer{
+		width:100vw;
+		height: 300px;
+		background-color:#000;
+		z-index: -5;
+		border-top: 1px solid #fff;
+}
+.contentBox{
+	background-color: #000;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	height:200px;
+	width:90%;
+}
+.contacts{
+	margin: 10px;
+	background-color: #000;
+	color:#a1a1a1;
+	font-family: 'Open Sans', sans-serif;
+
+}
+.contacts a{
+	text-decoration: none;
+	color: #fff;
+	margin: 0px 25px;
+	transition: .5s;
+	padding: 10px;
+}
+.contacts a:hover{
+	background-color:#335475;
+	color: #fff;
+}
+
+/*PURE CSS TEXT SLIDER SINGLE ELEMENT: BY ANDREW ARCHIBALD. LINK: https://codepen.io/andrewarchi/pen/aWZGeP*/
+
+.profile-bio {
+  text-align: center;
+  position: relative;
+	font-family: 'Open Sans', sans-serif;
+}
+.profile-bio::before, .profile-bio::after {
+  content: "";
+  position: absolute;
+	margin-top:25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+.profile-bio::before {
+  -webkit-animation: slide 8s infinite -0.8s, change-text 56s step-end infinite -2s;
+          animation: slide 8s infinite -0.8s, change-text 56s step-end infinite -2s;
+}
+.profile-bio::after {
+  -webkit-animation: slide 8s infinite -4.8s, change-text 56s step-end infinite -30s;
+          animation: slide 8s infinite -4.8s, change-text 56s step-end infinite -30s;
+}
+/*backup keyframes*/
+@-webkit-keyframes change-text {
+}
+@keyframes change-text {
+  0% {
+    content: "Ophidia : Strive , Persevere , Conquer ";
+  }
+  14.2857142857% {
+    content: " Be what you are afraid of ";
+  }
+  28.5714285714% {
+    content: " Be greater than all else";
+  }
+  42.8571428571% {
+    content: " Filler ";
+  }
+  57.1428571429% {
+    content: " Filler";
+  }
+  71.4285714286% {
+    content: " Filler ";
+  }
+  85.7142857143% {
+    content: " Filler";
+  }
+}
+@-webkit-keyframes slide {
+  0%, 100% {
+    left: -100px;
+    opacity: 0;
+  }
+  10%, 50% {
+    left: 0;
+    opacity: 1;
+  }
+  60% {
+    left: 100px;
+    opacity: 0;
+  }
+}
+@keyframes slide {
+  0%, 100% {
+    left: -100px;
+    opacity: 0;
+  }
+  10%, 50% {
+    left: 0;
+    opacity: 1;
+  }
+  60% {
+    left: 100px;
+    opacity: 0;
+  }
+}
